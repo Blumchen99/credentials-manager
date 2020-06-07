@@ -1,7 +1,12 @@
-def name(vorname: str):
-    print("Hallo " + vorname)
+from lib.store import file
 
 
-name(
-    vorname="kleines mädchen"
+file.write_lines(
+    "name.txt",
+    "storage/",
+    [
+        "NAME: test123",
+        "PASSWORD: 123456",
+        "SERVICE: justatest"
+    ]
 )
